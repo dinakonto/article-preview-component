@@ -102,15 +102,27 @@ p {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1;
   position: absolute;
   right: 30px;
   top: 20px;
+  fill: hsl(217, 19%, 35%);
+}
+
+.share-btn:hover,
+.share-btn:active {
+  fill: white;
+  background-color: hsl(212, 23%, 69%);
+}
+
+button:focus {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
 }
 
 .share-options {
   background-color: hsl(217, 19%, 35%);
-  /* display: none; */
   position: absolute;
   top: 0;
   left: 0;
@@ -119,6 +131,10 @@ p {
   border-radius: 0 0 10px 10px;
   display: flex;
   align-items: center;
+}
+
+.hide {
+  display: none !important;
 }
 
 .share-options h3 {
@@ -137,6 +153,12 @@ p {
 .share-options ul li {
   display: inline-block;
   margin-left: 15px;
+}
+.share-options ul li svg {
+  fill: white;
+}
+.share-options ul li svg:hover {
+  fill: hsl(212, 23%, 69%);
 }
 
 /* RESPONSIVE */

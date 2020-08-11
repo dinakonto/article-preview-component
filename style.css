@@ -9,6 +9,9 @@ body {
 body {
   background-color: hsl(210, 46%, 95%);
   padding: 24px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 article {
@@ -159,6 +162,10 @@ button:focus {
 }
 .share-options ul li svg:hover {
   fill: hsl(212, 23%, 69%);
+}
+
+.share-options a:focus {
+  outline: 1px dotted white;
 }
 
 /* RESPONSIVE */
